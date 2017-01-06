@@ -1,0 +1,218 @@
+main, section {
+    display: block;
+}
+
+body {
+	background: #1A2030;
+}
+
+@media (min-width: 1200px) {
+
+	header {
+		position: fixed;
+		top: 0px;
+		width: 100%;
+		margin: 0px auto;
+		padding-bottom: 2%;
+		background: #1A2030;
+		z-index: 10;
+	}
+
+	main {
+		margin-top: 17%;
+	}
+
+	.title {
+		font-family: 'Raleway';
+		font-weight: 900;
+		font-style: italic;
+		font-size: 42px;
+		color: #FDFCF2;
+		letter-spacing: 1.92px;
+		text-align: center;
+	}
+
+	ul {
+		margin-top: 2.5%;
+		text-align: center;
+		margin-left: -7%;
+	}
+
+	ul li {
+	    display:inline;
+	    padding: 1.5%;
+	}
+
+	#legend {
+		font-family: 'Raleway';
+		font-weight: 500;
+		font-style: italic;
+		font-size: 14px;
+		color: #FDFCF2;
+	}
+
+	#joyLi {  
+		font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 14px;
+		color: #FF8F00;
+		letter-spacing: 0.87px;
+	}
+
+	#fearLi {  
+		font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 14px;
+		color: #31A354;
+		letter-spacing: 0.87px;
+	}
+
+	#sadLi {  
+		font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 14px;
+		color: #22A1FE;
+		letter-spacing: 0.87px;
+	}
+
+	#angerLi {  
+		font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 14px;
+		color: #DE2D26;
+		letter-spacing: 0.87px;
+	}
+
+	.Low {
+		width: 15px;
+		height: 15px;
+		-moz-border-radius: 50px;
+		-webkit-border-radius: 50px;
+		border-radius: 50px;
+		position: relative;
+		top: 50%;
+		right: 20%;
+	}
+
+	.Medium {
+		width: 25px;
+		height: 25px;
+		-moz-border-radius: 50px;
+		-webkit-border-radius: 50px;
+		border-radius: 50px;
+		position: relative;
+		top: 50%;
+		right: 30%;
+	}
+
+	.High {
+		width: 35px;
+		height: 35px;
+		-moz-border-radius: 50px;
+		-webkit-border-radius: 50px;
+		border-radius: 50px;
+		position: relative;
+		top: 50%;
+		right: 37%;
+	}
+
+	#Joy {
+		background: #FF8F00;
+	}
+
+
+	#Fear {
+		background: #31A354;
+	}
+
+	#Sadness {
+		background: #22A1FE;
+	}
+
+	#Anger {
+		background: #DE2D26;
+	}
+
+	td {
+		border: 2px solid #6F7279;
+		width: 50px;
+		height: 60px;
+	}
+
+	table {
+		border-collapse: collapse;
+	}
+
+	#bTable {
+		float: left;
+		margin-left:31.5%;
+	}
+
+	#rTable {
+		float: left;
+		margin-left: 5%;
+	}
+
+	#rSong {
+		overflow-y: auto;
+		position: fixed;
+		float: left;
+		right: 2%;
+		padding: 110px;
+		padding-top:0px;
+		width: 200px;
+		height: 50%;
+	}
+
+	#bSong {
+		overflow-y: auto;
+		position: fixed;
+		float: left;
+		padding: 110px;
+		padding-top:0px;
+		width: 200px;
+		height: 50%;
+	}
+
+	#songName {
+		font-family: 'Raleway';
+		font-weight: 800;
+		font-size: 24px;
+		color: #FDFCF2;
+	}
+
+	#songDetails {
+		font-family: 'Raleway';
+		font-weight: 500;
+		font-size: 12px;
+		color: #FDFCF2;
+		letter-spacing: 0.38px;
+		line-height: 22px;
+	}
+
+	#lyrics {
+		font-family: 'Raleway';
+		font-weight: 500;
+		font-size: 14px;
+		color: #FDFCF2;
+		letter-spacing: 0.45px;
+		line-height: 21px;
+	}
+
+	.clear {
+		clear: both;
+	}
+
+	.invisible {
+		border: none;
+		//width: 0px;
+	}
+
+	#bSong::-webkit-scrollbar {
+		display: none;
+	}
+
+	#rSong::-webkit-scrollbar {
+		display: none;
+	}
+}

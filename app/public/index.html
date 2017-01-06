@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="songData">
+   <head>
+   		<link rel="stylesheet" href="css/style.css">
+   		<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+   </head>
+   <body>
+	    <header>
+		    <h1 class = "title"> The Beatles vs. The Rolling Stones </h1>
+			<ul>
+				<li id = "legend"> LEGEND -> </li> 
+				<li id = "joyLi"> JOY </li>
+				<li id = "fearLi"> FEAR </li>
+				<li id = "sadLi"> SADNESS </li>
+				<li id = "angerLi"> ANGER </li>
+			</ul> 
+		</header>
+	    <main ng-controller="songscontroller">
+			<section id = "bSong">	
+			</section>
+			<table id = "bTable"> 
+				 <tr ng-repeat="b in beatles" ng-click="showSong(b.song_name, b.band_name, b.song_writer, b.album_name, b.release_date, b.song_lyrics)">
+				    <td> <div class = "{{b.emotion_joy}}" id= "Joy"> </div> </td>
+				    <td> <div class = "{{b.emotion_fear}}" id= "Fear"> </div> </td>
+				    <td> <div class = "{{b.emotion_sadness}}" id= "Sadness"> </div> </td>
+				    <td class="invisible"> <div class = "{{b.emotion_anger}}" id= "Anger"> </div> </td>
+				  </tr>
+			</table>
+			<table id = "rTable"> 
+				 <tr ng-repeat="r in rolling" ng-click="showSong(r.song_name, r.band_name, r.song_writer, r.album_name, r.release_date, r.song_lyrics)">
+				    <td> <div class = "{{r.emotion_joy}}" id= "Joy"> </div> </td>
+				   	<td> <div class = "{{r.emotion_fear}}" id= "Fear"> </div> </td>
+				    <td> <div class = "{{r.emotion_sadness}}" id= "Sadness"> </div> </td>
+				    <td class="invisible"> <div class = "{{r.emotion_anger}}" id= "Anger"> </div> </td>
+				  </tr>
+			</table>
+			<section id = "rSong">	
+			</section>
+			<div class = "clear"> </div>
+		</main>
+		<script src="js/lib/angular/angular.min.js"></script>
+        <script src="js/getsongsdata.js"></script>
+   </body>
+</html>
